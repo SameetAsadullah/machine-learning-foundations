@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXERCISES = (
+IMPLEMENTATIONS = (
     "fundamentals/entropy", "neural-networks/from-scratch",
     "supervised-learning/linear-regression",
     "supervised-learning/automobile-regression",
@@ -26,7 +26,7 @@ EXERCISES = (
 
 def main() -> int:
     errors: list[str] = []
-    for relative in EXERCISES:
+    for relative in IMPLEMENTATIONS:
         if not (ROOT / relative / "README.md").is_file():
             errors.append(f"missing README: {relative}")
 
@@ -48,10 +48,10 @@ def main() -> int:
             errors.append(f"unexpected file larger than 10 MiB: {value}")
 
     for name in ("knn", "svm", "softmax"):
-        exercise = ROOT / "computer-vision/cs231n" / name
-        if not (exercise / "LICENSE").is_file():
+        implementation = ROOT / "computer-vision/cs231n" / name
+        if not (implementation / "LICENSE").is_file():
             errors.append(f"missing retained CS231n license: {name}")
-        if not (exercise / "src/cs231n/datasets/get_datasets.sh").is_file():
+        if not (implementation / "src/cs231n/datasets/get_datasets.sh").is_file():
             errors.append(f"missing CIFAR-10 download script: {name}")
 
     if not compileall.compile_dir(ROOT, quiet=1):
@@ -62,7 +62,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    print(f"Validated {len(EXERCISES)} ML exercises and {len(notebooks)} notebooks.")
+    print(f"Validated {len(IMPLEMENTATIONS)} ML implementations and {len(notebooks)} notebooks.")
     return 0
 
 

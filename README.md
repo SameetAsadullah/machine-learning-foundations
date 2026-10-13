@@ -2,24 +2,24 @@
 
 A curated collection of foundational machine-learning implementations and experiments spanning regression, classification, clustering, neural networks, and computer vision.
 
-These projects document my learning progression. The implementations and notebooks remain close to their original form; the collection improves organization, attribution, dependency guidance, and repository hygiene.
+The implementations and notebooks remain close to their original form, with consistent organization, attribution, dependency guidance, and repository hygiene across the collection.
 
 ## Contents
 
-| Area | Exercises |
+| Area | Implementations |
 |---|---|
 | Fundamentals | [Entropy calculation](fundamentals/entropy) and a [neural network implementation](neural-networks/from-scratch) |
 | Supervised learning | [Linear regression](supervised-learning/linear-regression), [automobile regression](supervised-learning/automobile-regression), [Titanic classification](supervised-learning/titanic-classification), and [KNN on Abalone](supervised-learning/abalone-knn) |
 | Unsupervised learning | K-means clustering on [Iris](unsupervised-learning/iris-k-means) and [Abalone](unsupervised-learning/abalone-k-means) |
-| Computer vision | [Multi-label image classification](computer-vision/multi-label-classification) and CS231n [KNN](computer-vision/cs231n/knn), [SVM](computer-vision/cs231n/svm), and [Softmax](computer-vision/cs231n/softmax) exercises on CIFAR-10 |
+| Computer vision | [Multi-label image classification](computer-vision/multi-label-classification) and CS231n [KNN](computer-vision/cs231n/knn), [SVM](computer-vision/cs231n/svm), and [Softmax](computer-vision/cs231n/softmax) implementations on CIFAR-10 |
 
 ## Data policy
 
-Large third-party datasets are not committed to this repository. Dataset download instructions or scripts are retained where available. The three CS231n exercises exclude the roughly 500 MB of duplicated CIFAR-10 binaries present in their original repositories.
+Large third-party datasets are not committed to this repository. Dataset download instructions or scripts are retained where available. The three CS231n modules exclude the roughly 500 MB of duplicated CIFAR-10 binaries present in their original repositories.
 
 ## Environment
 
-The collection uses Python notebooks from different stages of learning, so dependency requirements vary by exercise. A shared starting environment is provided:
+The collection contains Python notebooks with different dependency requirements. A shared starting environment is provided:
 
 ```bash
 python3 -m venv .venv
@@ -32,7 +32,7 @@ Individual notebooks may require small compatibility adjustments when run with n
 
 ## Attribution
 
-The CS231n exercises build on course scaffolding distributed under the license retained in each exercise directory. My notebooks and completed implementation work are presented alongside that attribution rather than as wholly original course infrastructure.
+The CS231n implementations build on upstream scaffolding distributed under the license retained in each directory. My notebooks and completed implementation work are presented alongside that attribution rather than as wholly original infrastructure.
 
 ## Provenance and licensing
 
