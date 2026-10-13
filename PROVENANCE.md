@@ -15,4 +15,4 @@
 | `computer-vision/cs231n/svm` | `cs231n-SVM-Classifier-on-Cifar10-Dataset` |
 | `computer-vision/cs231n/softmax` | `cs231n-Softmax-Classifier-on-Cifar10-Dataset` |
 
-Full histories are merged for the first nine projects. Clean snapshots are used for the three CS231n repositories to exclude duplicated CIFAR-10 binaries, generated caches, and OS metadata. Their original histories remain preserved privately.
+Full histories are merged for the first nine projects. Clean snapshots are used for the three CS231n repositories to exclude duplicated CIFAR-10 binaries, generated caches, and OS metadata. Their original histories are preserved in verified archival mirrors, with authorship dates retained in the account's private work log.
