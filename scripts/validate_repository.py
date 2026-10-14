@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate ML collection structure without executing historical notebooks."""
+"""Validate machine learning structure without executing notebooks."""
 
 from __future__ import annotations
 

@@ -1,8 +1,8 @@
-# Machine Learning Foundations
+# ML Algorithms
 
-A curated collection of foundational machine-learning implementations and experiments spanning regression, classification, clustering, neural networks, and computer vision.
+Machine-learning implementations spanning regression, classification, clustering, neural networks, and computer vision.
 
-The implementations and notebooks remain close to their original form, with consistent organization, attribution, dependency guidance, and repository hygiene across the collection.
+Python notebooks and source are organized by method, with dependency guidance, attribution, and repository validation.
 
 ## Contents
 
@@ -15,11 +15,11 @@ The implementations and notebooks remain close to their original form, with cons
 
 ## Data policy
 
-Large third-party datasets are not committed to this repository. Dataset download instructions or scripts are retained where available. The three CS231n modules exclude the roughly 500 MB of duplicated CIFAR-10 binaries present in their original repositories.
+Large third-party datasets are not committed to this repository. Dataset download instructions or scripts are provided where available. The three CS231n modules exclude roughly 500 MB of duplicated CIFAR-10 binaries.
 
 ## Environment
 
-The collection contains Python notebooks with different dependency requirements. A shared starting environment is provided:
+The notebooks have different dependency requirements. A shared starting environment is provided:
 
 ```bash
 python3 -m venv .venv
@@ -28,12 +28,12 @@ python -m pip install -r requirements.txt
 jupyter lab
 ```
 
-Individual notebooks may require small compatibility adjustments when run with newer library versions; their original implementation cells have not been rewritten during consolidation.
+Individual notebooks may require compatibility adjustments with newer library versions.
 
 ## Attribution
 
-The CS231n implementations build on upstream scaffolding distributed under the license retained in each directory. My notebooks and completed implementation work are presented alongside that attribution rather than as wholly original infrastructure.
+The CS231n implementations build on upstream scaffolding distributed under the license retained in each directory. Attribution for the upstream code is documented alongside the implementation work.
 
 ## Provenance and licensing
 
-See [PROVENANCE.md](PROVENANCE.md). Original per-project license files are retained. No blanket license is applied to projects that previously had no declared license.
+See [PROVENANCE.md](PROVENANCE.md) for source history and licensing. Existing component licenses are retained; no blanket license is applied to code that previously had no declared license.
